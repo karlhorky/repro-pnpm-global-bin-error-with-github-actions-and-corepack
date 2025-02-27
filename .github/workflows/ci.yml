@@ -16,7 +16,9 @@ jobs:
 
       - run: corepack enable
 
-      - run: pnpm setup
+      - run: |
+          pnpm setup
+          source /home/runner/.bashrc
         env:
           SHELL: bash
 
