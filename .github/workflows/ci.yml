@@ -29,6 +29,6 @@ jobs:
       # Unset
       - run: pnpm bin --global
 
-      # pnpm cannot find
+      # pnpm cannot find the global bin dir
       # ERR_PNPM_NO_GLOBAL_BIN_DIR
-      - run: corepack add --global @upleveled/preflight
+      - run: pnpm add --global @upleveled/preflight
