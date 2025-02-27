@@ -21,8 +21,8 @@ jobs:
           SHELL: bash
 
       # Uncomment to fix the issue
-      # - run: echo 'PNPM_HOME="/home/runner/.local/share/pnpm"' >> $GITHUB_ENV
-      # - run: echo "$PNPM_HOME" >> $GITHUB_PATH
+      # - run: echo "PNPM_HOME=/home/runner/.local/share/pnpm" >> "$GITHUB_ENV"
+      # - run: echo "$PNPM_HOME" >> "$GITHUB_PATH"
 
       # Unset
       - run: echo $PNPM_HOME
