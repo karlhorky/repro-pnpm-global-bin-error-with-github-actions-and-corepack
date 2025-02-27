@@ -16,11 +16,11 @@ jobs:
 
       - run: corepack enable
 
-      - run: |
-          pnpm setup
-          source /home/runner/.bashrc
+      - run: pnpm setup
         env:
           SHELL: bash
+
+      - run: source /home/runner/.bashrc
 
       # Uncomment to fix the issue
       # - run: echo "PNPM_HOME=/home/runner/.local/share/pnpm" >> "$GITHUB_ENV"
